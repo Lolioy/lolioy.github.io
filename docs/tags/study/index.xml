@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>study on Lolioy 分享</title>
+    <link>/tags/study/</link>
+    <description>Lolioy 分享 (study)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+    <atom:link href="/tags/study/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VSCode 配置 Golang 环境</title>
+      <link>/post/vscode-go/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vscode-go/</guid>
+      <description>&lt;p&gt;&lt;code&gt;VSCode&lt;/code&gt;和&lt;code&gt;Golang&lt;/code&gt; 安装就不说了，网上教程一大把。&lt;/p&gt;
+&lt;h2 id=&#34;goproxy-配置&#34;&gt;GoProxy 配置&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由于国内网络环境限制，建议先配置&lt;code&gt;GoProxy&lt;/code&gt;环境变量，当然不配置也行，你能正常访问 &lt;a href=&#34;https://golang.org/&#34;&gt;https://golang.org/&lt;/a&gt; 的话问题不大。&lt;/p&gt;
+&lt;p&gt;推荐使用&lt;code&gt;go mod&lt;/code&gt;管理项目&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在安装好&lt;code&gt;Go&lt;/code&gt;运行环境后，&lt;code&gt;Windows&lt;/code&gt;系统可以打开&lt;code&gt;cmd&lt;/code&gt;或者&lt;code&gt;powershell&lt;/code&gt; (&lt;code&gt;macOS&lt;/code&gt;和&lt;code&gt;Linux&lt;/code&gt;系统打开终端)，分别输入以下命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 启用 go mod&lt;/span&gt;
+go env -w GO111MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;on
+&lt;span style=&#34;color:#75715e&#34;&gt;# 设置 Go Proxy 代理&lt;/span&gt;
+go env -w GOPROXY&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;https://goproxy.io,direct
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;vscode-安装-go-插件&#34;&gt;VScode 安装 Go 插件&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/151950a22fc34c859a69b71f529ab4f5~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vscode-安装-go-工具包&#34;&gt;VSCode 安装 Go 工具包&lt;/h2&gt;
+&lt;p&gt;Go 工具包包含了一些格式化、代码检查等功能&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt; (&lt;code&gt;Windows&lt;/code&gt;环境)，或者选择 &amp;ldquo;查看&amp;rdquo; -&amp;gt; &amp;ldquo;命令面板&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9f30d5d31f94468c8632dbd4807440ab~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;输入 &lt;code&gt;go isntall&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择 &lt;code&gt;Go: Install/Update Tools&lt;/code&gt; 项&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bf98a7cd5c82437eafa9a347a298b6ea~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;选择全部安装&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6af3ae194404934a89376f181402a03~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;这时候会弹出 &amp;ldquo;输出&amp;rdquo; 框，等待安装完成即可&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/14e40c6c18b24aaa80060add1c0bcbe4~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d517407fc96a437985ef307ab48f0bc7~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vscode-go-插件配置&#34;&gt;Vscode Go 插件配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开&lt;code&gt;VSCode&lt;/code&gt;设置面板&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d9fbe9b2b4214e0f9fbd5a24b57a4903~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;定位到&lt;code&gt;Go&lt;/code&gt;插件项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f25b41352c784d608b3e623fa7ad18d5~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;修改格式化&lt;code&gt;Go&lt;/code&gt;代码工具，我习惯使用的是&lt;code&gt;goimports&lt;/code&gt;，大家可以根据自己的喜好进行选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/561900e5594449049de219f6451b5fc8~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;启用代码提示（个人习惯，可以不启用）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8484f2e9cae94406abde0446a7f50035~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;启用&lt;code&gt;Go Server&lt;/code&gt;，启用后可以开启代码跳转、格式化、自动完成、代码诊断等功能&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3bce571c29d741c0bc9b05431458159a~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;还可以设置其他配置项，感兴趣的同学可以到官方文档自行了解 &lt;a href=&#34;https://github.com/golang/vscode-go/blob/master/docs/settings.md&#34;&gt;https://github.com/golang/vscode-go/blob/master/docs/settings.md&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;到这里&lt;code&gt;VSCode&lt;/code&gt;基本上可以满足我们日常开发&lt;code&gt;Go&lt;/code&gt;的需求了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>学习资料</title>
+      <link>/post/study-collection/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/study-collection/</guid>
+      <description>&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/DSgbe4plwYe1LjTgvvSeeg&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 三万字精华总结&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/5e3eb616f265da570d734dcb#heading-21&#34;&gt;MySQL 优化之精髓&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/29150809&#34;&gt;MySQL 锁总结&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/dGECnPailOkMX476KoTQfg&#34;&gt;互联网公司常用 MySQL 分库分表方案&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&amp;amp;mid=2247485148&amp;amp;idx=1&amp;amp;sn=a31f7ddef8f71104ee616b57996a0e44&amp;amp;chksm=9b859621acf21f37270469a8d5a5ae4515def82afcc2f2a27f283a34ddbd50c34b9f3ce8c2cf&amp;amp;token=1294896345&amp;amp;lang=zh_CN#rd&#34;&gt;Explain 执行计划&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/e0CqJG2-PCDgKLjQfh02tw&#34;&gt;MySQL 调优套路&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

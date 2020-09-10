@@ -1,0 +1,26 @@
+---
+title: "关于"
+description: "博客简介"
+date: "2019-02-28"
+author: "Lolioy"
+slug: /about/subpage
+menu:
+  about:
+    identifier: about
+    name: About
+    title: About
+    url: /about
+    weight: 1
+  subpage:
+    identifier: subpage
+    parent: about
+    name: 关于
+    title: Subpage
+    url: /about/subpage/
+    weight: 10
+---
+
+
+- Email: `oytian.zq@qq.com`
+- Action: `PHP` && `Golang`
+- Github: `https://github.com/Lolioy`

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+
+    
+
+<html lang="zh-cn" data-theme="dark">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>腾讯云服务器 Docker 安装记录 - Lolioy 分享</title>
+<meta name="description" content="Lolioy 个人博客">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/favicon.png">
+
+<link rel="stylesheet" href="/css/light.css?rnd=1599733229" />
+<style>
+
+    :root {
+        --font-color: #eee;
+--bg-color: #212121;
+
+--link-color:#599ada;
+--link-state-color:#ff5858;
+--link-state-border-color: rgba(238, 54, 54, 0.5);
+
+--thead-bg-color: #343a40;
+--table-border-color: lightgrey;
+
+--pre-color: #333;
+--pre-bg-color: #f1f1f1;
+
+--bq-color: #ccc;
+--hr-color: #333;
+
+--pagination-bg-color: #373737;
+--pagination-link-color: #b6b6b6;
+
+--post-info-color: grey;
+
+--switcher-color: #333;
+--switcher-bg-color: #fff;
+
+    }
+
+</style>
+
+<link rel="stylesheet" href="/css/style.css?rnd=1599733229" />
+
+
+
+
+
+<meta property="og:title" content="腾讯云服务器 Docker 安装记录" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/linux-docker-config/" />
+<meta property="article:published_time" content="2019-09-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-18T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="腾讯云服务器 Docker 安装记录"/>
+<meta name="twitter:description" content=""/>
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <h1 class="site-title">
+    <a href="/">Lolioy 分享</a>
+</h1>
+
+    <nav>
+        
+        
+        <a class="" href="/" title="">首页</a>
+        
+        <a class="" href="/tags/" title="">标签</a>
+        
+        <a class="" href="/posts/" title="">归档</a>
+        
+        <a class="" href="/about/" title="">关于</a>
+        
+    </nav>
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+    
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">腾讯云服务器 Docker 安装记录</h1>
+        </header>
+        <div class="content">
+            <p>最近买了台腾讯云服务器, 习惯了使用 <code>Docker</code> 部署服务, 第一时间当然是给自己的服务器装一个 <code>Docker</code></p>
+<h2 id="配置软件源">配置软件源</h2>
+<p>由于是腾讯云的服务器, 所以配置国内软件源的时候肯定是优先选择腾讯云提供的软件源</p>
+<p>腾讯软件源: <a href="https://mirrors.cloud.tencent.com/">https://mirrors.cloud.tencent.com/</a></p>
+<p>找到合适的Linux发行版本, 我的是 <code>CentOS 7</code>: <a href="https://mirrors.cloud.tencent.com/help/centos.html">https://mirrors.cloud.tencent.com/help/centos.html</a></p>
+<p>按照文档里面的说明, 直接替换</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 下载替换软件源</span>
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.cloud.tencent.com/repo/centos7_base.repo
+
+<span style="color:#75715e"># 更新缓存</span>
+yum clean all
+yum makecache
+</code></pre></div><h2 id="安装-docker">安装 Docker</h2>
+<ul>
+<li>首先清除一下旧版本和依赖</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum remove docker <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    docker-client <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    docker-client-latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    docker-common <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    docker-latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    docker-latest-logrotate <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    docker-logrotate <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    docker-engine
+</code></pre></div><h3 id="安装-yum-utils">安装 <code>yum-utils</code></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install -y yum-utils
+</code></pre></div><h3 id="配置-docker-仓库--安装-docker">配置 <code>Docker</code> 仓库 &amp;&amp; 安装 <code>Docker</code></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum-config-manager <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --add-repo <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre></div><p>这一步很关键, 然而, 由于国内网络原因, 下载是真的慢, 所以我替换使用了腾讯云提供的仓库</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sed -i <span style="color:#e6db74">&#39;s+download.docker.com+mirrors.cloud.tencent.com/docker-ce+&#39;</span> /etc/yum.repos.d/docker-ce.repo
+</code></pre></div><p>安装 <code>Docker</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install docker-ce docker-ce-cli containerd.io
+</code></pre></div><h3 id="到这里-docker-就已经安装好了-启动运行看一下">到这里 <code>Docker</code> 就已经安装好了, 启动运行看一下</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">systemctl start docker
+</code></pre></div><h3 id="配置开机启动">配置开机启动</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">systemctl enable docker
+</code></pre></div><h3 id="同样的问题-docker-的默认仓库是搭建在国外服务器上的-手动配置一下国内仓库">同样的问题, <code>Docker</code> 的默认仓库是搭建在国外服务器上的, 手动配置一下国内仓库</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">vim /etc/docker/daemon.json
+</code></pre></div><p>注意配置文件的格式</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+	<span style="color:#f92672">&#34;registry-mirrors&#34;</span>: [
+		<span style="color:#e6db74">&#34;https://9903913c011242788ce2103eaaa4534d.mirror.swr.myhuaweicloud.com&#34;</span>,
+		<span style="color:#e6db74">&#34;https://dockerhub.azk8s.cn&#34;</span>,
+		<span style="color:#e6db74">&#34;https://docker.mirrors.ustc.edu.cn&#34;</span>,
+		<span style="color:#e6db74">&#34;http://hub-mirror.c.163.com&#34;</span>,
+		<span style="color:#e6db74">&#34;https://registry.docker-cn.com&#34;</span>
+	]
+}
+</code></pre></div><h2 id="结语">结语</h2>
+<p>整个配置过程难度不大, 主要还是国内网络的问题, 需要替换软件源和仓库等等 ~~</p>
+<p><strong>现在, 可以准备把项目扔到服务器上运行了 o(<em>￣▽￣</em>)ブ</strong></p>
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date">2019-09-18</div>
+    
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        <li><a href="/tags/docker">#docker</a></li>
+                    
+                        <li><a href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91">#腾讯云</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+        
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/post/study-collection/">学习资料</a>
+            
+        </div>
+        <div class="right pagination-item disabled">
+            
+        </div>
+    </div>
+
+    
+
+    
+
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Lolioy, 2020<br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+   
+    </div>
+</footer>
+
+        
+    </div>
+</body>
+</html>
