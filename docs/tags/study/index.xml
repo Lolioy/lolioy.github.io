@@ -94,19 +94,22 @@ go env -w GOPROXY&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;https:/
 &lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/DSgbe4plwYe1LjTgvvSeeg&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 三万字精华总结&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/5e3eb616f265da570d734dcb#heading-21&#34;&gt;MySQL 优化之精髓&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/5e3eb616f265da570d734dcb#heading-21&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 优化之精髓&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/29150809&#34;&gt;MySQL 锁总结&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/29150809&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 锁总结&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/dGECnPailOkMX476KoTQfg&#34;&gt;互联网公司常用 MySQL 分库分表方案&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/dGECnPailOkMX476KoTQfg&#34;&gt;互联网公司常用 &lt;code&gt;MySQL&lt;/code&gt; 分库分表方案&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&amp;amp;mid=2247485148&amp;amp;idx=1&amp;amp;sn=a31f7ddef8f71104ee616b57996a0e44&amp;amp;chksm=9b859621acf21f37270469a8d5a5ae4515def82afcc2f2a27f283a34ddbd50c34b9f3ce8c2cf&amp;amp;token=1294896345&amp;amp;lang=zh_CN#rd&#34;&gt;Explain 执行计划&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&amp;amp;mid=2247485148&amp;amp;idx=1&amp;amp;sn=a31f7ddef8f71104ee616b57996a0e44&amp;amp;chksm=9b859621acf21f37270469a8d5a5ae4515def82afcc2f2a27f283a34ddbd50c34b9f3ce8c2cf&amp;amp;token=1294896345&amp;amp;lang=zh_CN#rd&#34;&gt;&lt;code&gt;Explain&lt;/code&gt; 执行计划&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/e0CqJG2-PCDgKLjQfh02tw&#34;&gt;MySQL 调优套路&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/e0CqJG2-PCDgKLjQfh02tw&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 调优套路&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/6869532756498448392&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 索引凭什么能让查询效率提高这么多&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
