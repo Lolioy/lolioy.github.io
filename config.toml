@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "zh-cn"
-title = "Lolioy 分享"
+title = "Lolioy 杂货铺"
 theme = "anubis"
 paginate = 5
 
@@ -14,7 +14,7 @@ publishDir = "docs"
 
 [params]
    author = "Lolioy"
-   description = "Lolioy 个人博客"
+   description = "Lolioy 杂货铺"
    dateFormat = "2006-01-02"
    paginationSinglePost = true
    style = "dark-without-switcher"
