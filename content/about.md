@@ -5,6 +5,8 @@ author: "Lolioy"
 ---
 
 
-- Email: `oytian.zq@qq.com`
-- Action: `PHP` && `Golang`
-- Github: `https://github.com/Lolioy`
+- `oytian.zq@qq.com`
+
+- `PHP` && `Golang`
+
+- https://github.com/Lolioy

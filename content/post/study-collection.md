@@ -25,3 +25,7 @@ tags = [
 - [`MySQL` 调优套路](https://mp.weixin.qq.com/s/e0CqJG2-PCDgKLjQfh02tw)
 
 - [`MySQL` 索引凭什么能让查询效率提高这么多](https://juejin.im/post/6869532756498448392)
+
+- [`MySQL` 锁](https://juejin.im/post/6871018035630342151)
+
+- [`MySQL` 面试题](https://juejin.im/post/6868270408534720525)
