@@ -221,16 +221,18 @@ yum makecache
       <guid>/about/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;oytian.zq@qq.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;📫 &lt;code&gt;oytian.zq@qq.com&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;PHP&lt;/code&gt; &amp;amp;&amp;amp; &lt;code&gt;Golang&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;💻 &lt;code&gt;PHP&lt;/code&gt; &amp;amp;&amp;amp; &lt;code&gt;Golang&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/Lolioy&#34;&gt;https://github.com/Lolioy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👏 &lt;a href=&#34;https://github.com/Lolioy/&#34;&gt;&lt;code&gt;GITHUB&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;li&gt;
+&lt;p&gt;👍 &lt;a href=&#34;http://www.lolioy.top&#34;&gt;&lt;code&gt;我的博客&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>
