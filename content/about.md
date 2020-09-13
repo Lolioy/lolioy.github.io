@@ -4,9 +4,12 @@ description: "博客简介"
 author: "Lolioy"
 ---
 
+<!--more-->
 
-- `oytian.zq@qq.com`
+- 📫 `oytian.zq@qq.com`
 
-- `PHP` && `Golang`
+- 💻 `PHP` && `Golang`
 
-- https://github.com/Lolioy
+- 👏 [`GITHUB`](https://github.com/Lolioy/)
+
+- 👍 [`我的博客`](http://www.lolioy.top)

@@ -19,6 +19,7 @@ publishDir = "docs"
    paginationSinglePost = true
    style = "dark-without-switcher"
    readMore = false
+   beian = ""
 
 [menu]
 
