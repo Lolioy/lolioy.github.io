@@ -19,7 +19,7 @@ publishDir = "docs"
    paginationSinglePost = true
    style = "dark-without-switcher"
    readMore = false
-   beian = ""
+   beian = "粤ICP备18160923号-2"
 
 [menu]
 
