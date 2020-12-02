@@ -3,12 +3,9 @@
   <channel>
     <title>Categories on Lolioy 杂货铺</title>
     <link>/categories/</link>
-    <description>Lolioy 杂货铺 (Categories)</description>
+    <description>Recent content in Categories on Lolioy 杂货铺</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <copyright>&amp;copy; 2020 &lt;a href=&#34;https://beian.miit.gov.cn/&#34;&gt;粤ICP备18160923号-2&lt;/a&gt;</copyright><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

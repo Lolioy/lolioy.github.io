@@ -3,205 +3,63 @@
   <channel>
     <title>Lolioy 杂货铺</title>
     <link>/</link>
-    <description>Lolioy 杂货铺</description>
+    <description>Recent content on Lolioy 杂货铺</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <copyright>&amp;copy; 2020 &lt;a href=&#34;https://beian.miit.gov.cn/&#34;&gt;粤ICP备18160923号-2&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VSCode 配置 Golang 环境</title>
-      <link>/post/vscode-go/</link>
+      <link>/posts/vscode-go/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/vscode-go/</guid>
-      <description>&lt;p&gt;&lt;code&gt;VSCode&lt;/code&gt;和&lt;code&gt;Golang&lt;/code&gt; 安装就不说了，网上教程一大把。&lt;/p&gt;
-&lt;h2 id=&#34;goproxy-配置&#34;&gt;GoProxy 配置&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;由于国内网络环境限制，建议先配置&lt;code&gt;GoProxy&lt;/code&gt;环境变量，当然不配置也行，你能正常访问 &lt;a href=&#34;https://golang.org/&#34;&gt;https://golang.org/&lt;/a&gt; 的话问题不大。&lt;/p&gt;
-&lt;p&gt;推荐使用&lt;code&gt;go mod&lt;/code&gt;管理项目&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在安装好&lt;code&gt;Go&lt;/code&gt;运行环境后，&lt;code&gt;Windows&lt;/code&gt;系统可以打开&lt;code&gt;cmd&lt;/code&gt;或者&lt;code&gt;powershell&lt;/code&gt; (&lt;code&gt;macOS&lt;/code&gt;和&lt;code&gt;Linux&lt;/code&gt;系统打开终端)，分别输入以下命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 启用 go mod&lt;/span&gt;
-go env -w GO111MODULE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;on
-&lt;span style=&#34;color:#75715e&#34;&gt;# 设置 Go Proxy 代理&lt;/span&gt;
-go env -w GOPROXY&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;https://goproxy.io,direct
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;vscode-安装-go-插件&#34;&gt;VScode 安装 Go 插件&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/151950a22fc34c859a69b71f529ab4f5~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;vscode-安装-go-工具包&#34;&gt;VSCode 安装 Go 工具包&lt;/h2&gt;
-&lt;p&gt;Go 工具包包含了一些格式化、代码检查等功能&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt; (&lt;code&gt;Windows&lt;/code&gt;环境)，或者选择 &amp;ldquo;查看&amp;rdquo; -&amp;gt; &amp;ldquo;命令面板&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9f30d5d31f94468c8632dbd4807440ab~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;输入 &lt;code&gt;go isntall&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;选择 &lt;code&gt;Go: Install/Update Tools&lt;/code&gt; 项&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bf98a7cd5c82437eafa9a347a298b6ea~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;选择全部安装&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6af3ae194404934a89376f181402a03~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;这时候会弹出 &amp;ldquo;输出&amp;rdquo; 框，等待安装完成即可&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/14e40c6c18b24aaa80060add1c0bcbe4~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d517407fc96a437985ef307ab48f0bc7~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;vscode-go-插件配置&#34;&gt;Vscode Go 插件配置&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;打开&lt;code&gt;VSCode&lt;/code&gt;设置面板&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d9fbe9b2b4214e0f9fbd5a24b57a4903~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;定位到&lt;code&gt;Go&lt;/code&gt;插件项&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f25b41352c784d608b3e623fa7ad18d5~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;修改格式化&lt;code&gt;Go&lt;/code&gt;代码工具，我习惯使用的是&lt;code&gt;goimports&lt;/code&gt;，大家可以根据自己的喜好进行选择&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/561900e5594449049de219f6451b5fc8~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;启用代码提示（个人习惯，可以不启用）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8484f2e9cae94406abde0446a7f50035~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;启用&lt;code&gt;Go Server&lt;/code&gt;，启用后可以开启代码跳转、格式化、自动完成、代码诊断等功能&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3bce571c29d741c0bc9b05431458159a~tplv-k3u1fbpfcp-zoom-1.image&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;还可以设置其他配置项，感兴趣的同学可以到官方文档自行了解 &lt;a href=&#34;https://github.com/golang/vscode-go/blob/master/docs/settings.md&#34;&gt;https://github.com/golang/vscode-go/blob/master/docs/settings.md&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
-&lt;p&gt;到这里&lt;code&gt;VSCode&lt;/code&gt;基本上可以满足我们日常开发&lt;code&gt;Go&lt;/code&gt;的需求了&lt;/p&gt;</description>
+      <guid>/posts/vscode-go/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Sublime Text3 Key</title>
-      <link>/post/sublime-text-key/</link>
+      <link>/posts/sublime-text-key/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/sublime-text-key/</guid>
-      <description>&lt;p&gt;分享一枚 &lt;code&gt;Sublime Text3&lt;/code&gt; 注册码&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;----- BEGIN LICENSE -----
-Member J2TeaM
-Single User License
-EA7E-1011316
-D7DA350E 1B8B0760 972F8B60 F3E64036
-B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
-FA0A2ABE 25F65BD8 D51458E5 3923CE80
-87428428 79079A01 AA69F319 A1AF29A4
-A684C2DC 0B1583D4 19CBD290 217618CD
-5653E0A0 BACE3948 BB2EE45E 422D2C87
-DD9AF44B 99C49590 D2DBDEE1 75860FD2
-8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
------- END LICENSE ------
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <guid>/posts/sublime-text-key/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>学习资料</title>
-      <link>/post/study-collection/</link>
+      <link>/posts/study-collection/</link>
       <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/study-collection/</guid>
-      <description>&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/DSgbe4plwYe1LjTgvvSeeg&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 三万字精华总结&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/5e3eb616f265da570d734dcb#heading-21&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 优化之精髓&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/29150809&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 锁总结&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/dGECnPailOkMX476KoTQfg&#34;&gt;互联网公司常用 &lt;code&gt;MySQL&lt;/code&gt; 分库分表方案&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&amp;amp;mid=2247485148&amp;amp;idx=1&amp;amp;sn=a31f7ddef8f71104ee616b57996a0e44&amp;amp;chksm=9b859621acf21f37270469a8d5a5ae4515def82afcc2f2a27f283a34ddbd50c34b9f3ce8c2cf&amp;amp;token=1294896345&amp;amp;lang=zh_CN#rd&#34;&gt;&lt;code&gt;Explain&lt;/code&gt; 执行计划&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/e0CqJG2-PCDgKLjQfh02tw&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 调优套路&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/6869532756498448392&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 索引凭什么能让查询效率提高这么多&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/6871018035630342151&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 锁&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://juejin.im/post/6868270408534720525&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; 面试题&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>/posts/study-collection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go源码 - channel底层分析</title>
+      <link>/posts/go-core/chan/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/go-core/chan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go源码 - map底层分析</title>
+      <link>/posts/go-core/map/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/go-core/map/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>腾讯云服务器 Docker 安装记录</title>
-      <link>/post/linux-docker-config/</link>
+      <link>/posts/linux-docker-config/</link>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/linux-docker-config/</guid>
-      <description>&lt;p&gt;最近买了台腾讯云服务器, 习惯了使用 &lt;code&gt;Docker&lt;/code&gt; 部署服务, 第一时间当然是给自己的服务器装一个 &lt;code&gt;Docker&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;配置软件源&#34;&gt;配置软件源&lt;/h2&gt;
-&lt;p&gt;由于是腾讯云的服务器, 所以配置国内软件源的时候肯定是优先选择腾讯云提供的软件源&lt;/p&gt;
-&lt;p&gt;腾讯软件源: &lt;a href=&#34;https://mirrors.cloud.tencent.com/&#34;&gt;https://mirrors.cloud.tencent.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;找到合适的Linux发行版本, 我的是 &lt;code&gt;CentOS 7&lt;/code&gt;: &lt;a href=&#34;https://mirrors.cloud.tencent.com/help/centos.html&#34;&gt;https://mirrors.cloud.tencent.com/help/centos.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;按照文档里面的说明, 直接替换&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载替换软件源&lt;/span&gt;
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.cloud.tencent.com/repo/centos7_base.repo
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# 更新缓存&lt;/span&gt;
-yum clean all
-yum makecache
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装-docker&#34;&gt;安装 Docker&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;首先清除一下旧版本和依赖&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum remove docker &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-client &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-client-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-common &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-latest-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-engine
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;安装-yum-utils&#34;&gt;安装 &lt;code&gt;yum-utils&lt;/code&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum install -y yum-utils
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置-docker-仓库--安装-docker&#34;&gt;配置 &lt;code&gt;Docker&lt;/code&gt; 仓库 &amp;amp;&amp;amp; 安装 &lt;code&gt;Docker&lt;/code&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum-config-manager &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    --add-repo &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    https://download.docker.com/linux/centos/docker-ce.repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这一步很关键, 然而, 由于国内网络原因, 下载是真的慢, 所以我替换使用了腾讯云提供的仓库&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s+download.docker.com+mirrors.cloud.tencent.com/docker-ce+&amp;#39;&lt;/span&gt; /etc/yum.repos.d/docker-ce.repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装 &lt;code&gt;Docker&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum install docker-ce docker-ce-cli containerd.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;到这里-docker-就已经安装好了-启动运行看一下&#34;&gt;到这里 &lt;code&gt;Docker&lt;/code&gt; 就已经安装好了, 启动运行看一下&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;systemctl start docker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置开机启动&#34;&gt;配置开机启动&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;systemctl enable docker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;同样的问题-docker-的默认仓库是搭建在国外服务器上的-手动配置一下国内仓库&#34;&gt;同样的问题, &lt;code&gt;Docker&lt;/code&gt; 的默认仓库是搭建在国外服务器上的, 手动配置一下国内仓库&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;vim /etc/docker/daemon.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意配置文件的格式&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
-	&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;registry-mirrors&amp;#34;&lt;/span&gt;: [
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://9903913c011242788ce2103eaaa4534d.mirror.swr.myhuaweicloud.com&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://dockerhub.azk8s.cn&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://docker.mirrors.ustc.edu.cn&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://hub-mirror.c.163.com&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://registry.docker-cn.com&amp;#34;&lt;/span&gt;
-	]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
-&lt;p&gt;整个配置过程难度不大, 主要还是国内网络的问题, 需要替换软件源和仓库等等 ~~&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;现在, 可以准备把项目扔到服务器上运行了 o(&lt;em&gt;￣▽￣&lt;/em&gt;)ブ&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>/posts/linux-docker-config/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -211,28 +69,6 @@ yum makecache
       
       <guid>/archives/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;📫 &lt;code&gt;oytian.zq@qq.com&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;💻 &lt;code&gt;PHP&lt;/code&gt; &amp;amp;&amp;amp; &lt;code&gt;Golang&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;👏 &lt;a href=&#34;https://github.com/Lolioy/&#34;&gt;&lt;code&gt;GITHUB&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;👍 &lt;a href=&#34;http://www.lolioy.top&#34;&gt;&lt;code&gt;我的博客&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
   </channel>

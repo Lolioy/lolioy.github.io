@@ -1,0 +1,62 @@
+baseURL = "/"
+title = "Lolioy 杂货铺"
+theme = "anubis"
+paginate = 5
+
+disqusShortname = ""
+googleAnalytics = ""
+
+publishDir = "docs"
+
+languageCode = "zh-cn"
+# defaultContentLanguage = "zh-cn"
+# defaultContentLanguageInSubdir = true
+# [languages]
+# [languages.zh-cn]
+# toOldPosts = "下一页"
+
+[author]
+name = "Lolioy"
+
+[params]
+author = "Lolioy"
+description = "Lolioy 杂货铺"
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "dark-without-switcher"
+readMore = false
+beian = "粤ICP备18160923号-2"
+toOldPostsMessage = "下一页"
+
+[menu]
+
+[[menu.main]]
+identifier = "index"
+name = "首页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 4
+
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 2
+
+[[menu.main]]
+identifier = "archive"
+name = "归档"
+url = "/posts/"
+weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true

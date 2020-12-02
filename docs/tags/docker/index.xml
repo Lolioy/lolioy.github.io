@@ -3,73 +3,18 @@
   <channel>
     <title>docker on Lolioy 杂货铺</title>
     <link>/tags/docker/</link>
-    <description>Lolioy 杂货铺 (docker)</description>
+    <description>Recent content in docker on Lolioy 杂货铺</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Sep 2019 00:00:00 +0000</lastBuildDate>
-    
-    <atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language>
+    <copyright>&amp;copy; 2020 &lt;a href=&#34;https://beian.miit.gov.cn/&#34;&gt;粤ICP备18160923号-2&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 18 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>腾讯云服务器 Docker 安装记录</title>
-      <link>/post/linux-docker-config/</link>
+      <link>/posts/linux-docker-config/</link>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/linux-docker-config/</guid>
-      <description>&lt;p&gt;最近买了台腾讯云服务器, 习惯了使用 &lt;code&gt;Docker&lt;/code&gt; 部署服务, 第一时间当然是给自己的服务器装一个 &lt;code&gt;Docker&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;配置软件源&#34;&gt;配置软件源&lt;/h2&gt;
-&lt;p&gt;由于是腾讯云的服务器, 所以配置国内软件源的时候肯定是优先选择腾讯云提供的软件源&lt;/p&gt;
-&lt;p&gt;腾讯软件源: &lt;a href=&#34;https://mirrors.cloud.tencent.com/&#34;&gt;https://mirrors.cloud.tencent.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;找到合适的Linux发行版本, 我的是 &lt;code&gt;CentOS 7&lt;/code&gt;: &lt;a href=&#34;https://mirrors.cloud.tencent.com/help/centos.html&#34;&gt;https://mirrors.cloud.tencent.com/help/centos.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;按照文档里面的说明, 直接替换&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下载替换软件源&lt;/span&gt;
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.cloud.tencent.com/repo/centos7_base.repo
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# 更新缓存&lt;/span&gt;
-yum clean all
-yum makecache
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装-docker&#34;&gt;安装 Docker&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;首先清除一下旧版本和依赖&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum remove docker &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-client &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-client-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-common &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-latest-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    docker-engine
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;安装-yum-utils&#34;&gt;安装 &lt;code&gt;yum-utils&lt;/code&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum install -y yum-utils
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置-docker-仓库--安装-docker&#34;&gt;配置 &lt;code&gt;Docker&lt;/code&gt; 仓库 &amp;amp;&amp;amp; 安装 &lt;code&gt;Docker&lt;/code&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum-config-manager &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    --add-repo &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    https://download.docker.com/linux/centos/docker-ce.repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这一步很关键, 然而, 由于国内网络原因, 下载是真的慢, 所以我替换使用了腾讯云提供的仓库&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sed -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s+download.docker.com+mirrors.cloud.tencent.com/docker-ce+&amp;#39;&lt;/span&gt; /etc/yum.repos.d/docker-ce.repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装 &lt;code&gt;Docker&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum install docker-ce docker-ce-cli containerd.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;到这里-docker-就已经安装好了-启动运行看一下&#34;&gt;到这里 &lt;code&gt;Docker&lt;/code&gt; 就已经安装好了, 启动运行看一下&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;systemctl start docker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;配置开机启动&#34;&gt;配置开机启动&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;systemctl enable docker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;同样的问题-docker-的默认仓库是搭建在国外服务器上的-手动配置一下国内仓库&#34;&gt;同样的问题, &lt;code&gt;Docker&lt;/code&gt; 的默认仓库是搭建在国外服务器上的, 手动配置一下国内仓库&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;vim /etc/docker/daemon.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意配置文件的格式&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
-	&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;registry-mirrors&amp;#34;&lt;/span&gt;: [
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://9903913c011242788ce2103eaaa4534d.mirror.swr.myhuaweicloud.com&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://dockerhub.azk8s.cn&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://docker.mirrors.ustc.edu.cn&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://hub-mirror.c.163.com&amp;#34;&lt;/span&gt;,
-		&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://registry.docker-cn.com&amp;#34;&lt;/span&gt;
-	]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
-&lt;p&gt;整个配置过程难度不大, 主要还是国内网络的问题, 需要替换软件源和仓库等等 ~~&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;现在, 可以准备把项目扔到服务器上运行了 o(&lt;em&gt;￣▽￣&lt;/em&gt;)ブ&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>/posts/linux-docker-config/</guid>
+      <description></description>
     </item>
     
   </channel>

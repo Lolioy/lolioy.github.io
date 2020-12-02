@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文章 on Lolioy 杂货铺</title>
+    <link>/posts/</link>
+    <description>Recent content in 文章 on Lolioy 杂货铺</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2020 &lt;a href=&#34;https://beian.miit.gov.cn/&#34;&gt;粤ICP备18160923号-2&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode 配置 Golang 环境</title>
+      <link>/posts/vscode-go/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/vscode-go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sublime Text3 Key</title>
+      <link>/posts/sublime-text-key/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sublime-text-key/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>学习资料</title>
+      <link>/posts/study-collection/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/study-collection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go源码 - channel底层分析</title>
+      <link>/posts/go-core/chan/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/go-core/chan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go源码 - map底层分析</title>
+      <link>/posts/go-core/map/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/go-core/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>腾讯云服务器 Docker 安装记录</title>
+      <link>/posts/linux-docker-config/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linux-docker-config/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

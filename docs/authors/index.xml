@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Lolioy 杂货铺</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on Lolioy 杂货铺</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2020 &lt;a href=&#34;https://beian.miit.gov.cn/&#34;&gt;粤ICP备18160923号-2&lt;/a&gt;</copyright><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
