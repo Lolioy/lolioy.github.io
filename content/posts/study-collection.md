@@ -6,6 +6,7 @@ description = "学习资料收集"
 tags = [
     "study",
 ]
+featuredImage = "images/posts/study-bg.png"
 +++
 
 <!--more-->

@@ -1,10 +1,10 @@
 +++
 author = "Lolioy"
-title = "Go源码 - map底层分析"
+title = "Go Map 底层分析"
 date = "2020-01-20"
 description = ""
 tags = [
     "go",
-    "源码",
 ]
+series = ["Go源码"]
 +++

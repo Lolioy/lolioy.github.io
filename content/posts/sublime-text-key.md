@@ -4,14 +4,15 @@ title = "Sublime Text3 Key"
 date = "2020-03-23"
 description = "Sublime Text3 Key Share"
 tags = [
-    "text",
+    "工具",
 ]
 featuredImage = "images/posts/st3-bg.png"
 +++
 
 <!--more-->
 
-分享一枚 `Sublime Text3` 注册码
+### 分享一枚 `Sublime Text3` 注册码
+
 
 ```text
 ----- BEGIN LICENSE -----

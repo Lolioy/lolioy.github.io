@@ -7,6 +7,7 @@ tags = [
     "docker",
     "腾讯云",
 ]
+featuredImage = "images/posts/server-bg.png"
 +++
 
 <!--more-->

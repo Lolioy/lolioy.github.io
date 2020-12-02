@@ -4,9 +4,8 @@ title = "VSCode 配置 Golang 环境"
 date = "2020-06-11"
 description = "VSCode Go 插件配置"
 tags = [
-    "study",
-    "vscode",
     "go",
+    "工具",
 ]
 featuredImage = "images/posts/win10-bg.png"
 +++

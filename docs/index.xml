@@ -36,7 +36,7 @@
     </item>
     
     <item>
-      <title>Go源码 - channel底层分析</title>
+      <title>Go Chan 底层分析</title>
       <link>/posts/go-core/chan/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -45,7 +45,7 @@
     </item>
     
     <item>
-      <title>Go源码 - map底层分析</title>
+      <title>Go Map 底层分析</title>
       <link>/posts/go-core/map/</link>
       <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
       

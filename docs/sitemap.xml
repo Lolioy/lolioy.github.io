@@ -13,12 +13,7 @@
   </url>
   
   <url>
-    <loc>/tags/study/</loc>
-    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/vscode/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,12 +23,12 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,8 +38,8 @@
   </url>
   
   <url>
-    <loc>/tags/text/</loc>
-    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+    <loc>/tags/study/</loc>
+    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,7 +53,12 @@
   </url>
   
   <url>
-    <loc>/tags/%E6%BA%90%E7%A0%81/</loc>
+    <loc>/series/go%E6%BA%90%E7%A0%81/</loc>
+    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,10 +93,6 @@
   
   <url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/series/</loc>
   </url>
   
   <url>
