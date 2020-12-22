@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='zh' ><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>文章|Lolioy 杂货铺</title>
+<title>腾讯云服务器 Docker 安装记录|Lolioy 杂货铺</title>
 <link rel="stylesheet" href="/css/eureka.min.css">
 <script defer src="/js/eureka.min.js"></script>
 
@@ -40,39 +40,54 @@
   content="Lolioy 个人博客写作">
 <script type="application/ld+json">
 {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[{
-            "@type":"ListItem",
-            "position":  1 ,
-            "name": "Go Map 底层分析",
-            "description": "Lolioy 个人博客写作",
-            "url": "/posts/go-core/map/"
-        },{
-            "@type":"ListItem",
-            "position":  2 ,
-            "name": "腾讯云服务器 Docker 安装记录",
-            "description": "Lolioy 个人博客写作",
-            "image": "/images/posts/server-bg.png",
-            "url": "/posts/tools/linux-docker-config/"
-        }
-    ]
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"文章",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"腾讯云服务器 Docker 安装记录",
+      "item":"/posts/tools/linux-docker-config/"}]
 }
-</script><meta property="og:title" content="文章 | Lolioy 杂货铺" />
-<meta property="og:type" content="website" />
+</script><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/tools/linux-docker-config/"
+    },
+    "headline": "腾讯云服务器 Docker 安装记录 | Lolioy 杂货铺",
+    "image": "/images/posts/server-bg.png",
+    "datePublished": "2019-09-18T00:00:00+00:00",
+    "dateModified": "2019-09-18T00:00:00+00:00",
+    "wordCount":  406 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Lolioy",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/images/icon.jpg"
+        }
+        },
+    "description": "Lolioy 个人博客写作"
+}
+</script><meta property="og:title" content="腾讯云服务器 Docker 安装记录 | Lolioy 杂货铺" />
+<meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="/images/icon.jpg">
 
 
-<meta property="og:url" content="/posts/" />
+<meta property="og:url" content="/posts/tools/linux-docker-config/" />
 
 
 
 
-
-<meta property="og:description" content="Lolioy 个人博客写作" />
-
+<meta property="og:description" content="" />
 
 
 
@@ -89,18 +104,45 @@
 
 
 
-<meta property="og:updated_time" content="2020-12-21T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2019-09-18T00:00:00&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2019-09-18T00:00:00&#43;00:00" />
 
 
 
 <meta property="article:section" content="posts" />
 
 
-<meta property="article:tag" content="" />
+<meta property="article:tag" content="docker" />
+
+<meta property="article:tag" content="腾讯云" />
+
+<meta property="article:tag" content="工具" />
 
 
 
-<link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="Lolioy 杂货铺" /><body class="flex flex-col min-h-screen">
+
+
+
+
+
+
+<meta property="og:see_also" content="/posts/tools/faststone-capture/" />
+
+
+
+<meta property="og:see_also" content="/posts/tools/vscode-go/" />
+
+
+
+<meta property="og:see_also" content="/posts/tools/sublime-text-key/" />
+
+
+
+
+
+<body class="flex flex-col min-h-screen">
     <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
         <div class="container mx-auto">
             <div class="max-w-screen-xl"><script>
@@ -122,7 +164,7 @@
     <div id="target"
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
-            currenturl="/posts/">
+            currenturl="/posts/tools/linux-docker-config/">
             
             <a href="/posts/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
@@ -213,64 +255,12 @@
         
         <div class="container mx-auto ">
             <div class="max-w-screen-xl lg:px-4 xl:px-8">
-<article class="mx-6 my-8">
-    <h1 class="font-bold text-3xl text-primary-text">文章</h1>
-    
-</article>
-<div class="bg-secondary-bg rounded overflow-hidden px-4 divide-y">
-    
-    <div class="px-2 py-6">
-        <div class="flex flex-col-reverse lg:flex-row justify-between">
-    <div class="w-full">
-        <div class="my-2">
-            <div class="mb-4">
-                <a href="/posts/go-core/map/" class="font-bold text-xl hover:text-eureka">Go Map 底层分析</a>
-            </div>
-            <div class="content">
-                
-            </div>
-        </div>
-        
-        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>2020-01-20</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>0分钟阅读时长</span>
-    </div>
-    
-    
 
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-th-list mr-1"></i>
-        
-        <a href="/series/go%E6%BA%90%E7%A0%81/" class="hover:text-eureka">Go源码</a>
-        
-    </div>
-    
-</div>
-        
-    </div>
-    
-    
-</div>
-    </div>
-    
-    <div class="px-2 py-6">
-        <div class="flex flex-col-reverse lg:flex-row justify-between">
-    <div class="w-full">
-        <div class="my-2">
-            <div class="mb-4">
-                <a href="/posts/tools/linux-docker-config/" class="font-bold text-xl hover:text-eureka">腾讯云服务器 Docker 安装记录</a>
-            </div>
-            <div class="content">
-                
-            </div>
-        </div>
-        
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">腾讯云服务器 Docker 安装记录</h1>
         <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
@@ -293,40 +283,144 @@
     
 </div>
         
-    </div>
-    
-    
-    <div class="lg:max-w-xs mb-4 lg:mb-0 lg:ml-8">
-        <img src="/images/posts/server-bg.png" class="w-full" alt="Featured Image">
-    </div>
-    
-</div>
-    </div>
-    
-</div>
+        
+        <div class="my-4">
+            <img src="/images/posts/server-bg.png" class="w-full" alt="Featured Image">
+        </div>
+        
+        <div class="content">
+            <p>最近买了台腾讯云服务器, 习惯了使用 <code>Docker</code> 部署服务, 第一时间当然是给自己的服务器装一个 <code>Docker</code></p>
+<h2 id="配置软件源">配置软件源</h2>
+<p>由于是腾讯云的服务器, 所以配置国内软件源的时候肯定是优先选择腾讯云提供的软件源</p>
+<p>腾讯软件源: <a href="https://mirrors.cloud.tencent.com/">https://mirrors.cloud.tencent.com/</a></p>
+<p>找到合适的Linux发行版本, 我的是 <code>CentOS 7</code>: <a href="https://mirrors.cloud.tencent.com/help/centos.html">https://mirrors.cloud.tencent.com/help/centos.html</a></p>
+<p>按照文档里面的说明, 直接替换</p>
+<pre><code class="language-shell"># 下载替换软件源
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.cloud.tencent.com/repo/centos7_base.repo
 
-<ul class="pagination">
-  <li class="page-item">
-    <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="/posts/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="/posts/">1</a>
-  </li>
-  <li class="page-item active">
-    <a class="page-link" href="/posts/page/2/">2</a>
-  </li>
-  <li class="page-item disabled">
-    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="/posts/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-  </li>
+# 更新缓存
+yum clean all
+yum makecache
+</code></pre>
+<h2 id="安装-docker">安装 Docker</h2>
+<ul>
+<li>首先清除一下旧版本和依赖</li>
 </ul>
+<pre><code class="language-shell">yum remove docker \
+    docker-client \
+    docker-client-latest \
+    docker-common \
+    docker-latest \
+    docker-latest-logrotate \
+    docker-logrotate \
+    docker-engine
+</code></pre>
+<h3 id="安装-yum-utils">安装 <code>yum-utils</code></h3>
+<pre><code class="language-shell">yum install -y yum-utils
+</code></pre>
+<h3 id="配置-docker-仓库--安装-docker">配置 <code>Docker</code> 仓库 &amp;&amp; 安装 <code>Docker</code></h3>
+<pre><code class="language-shell">yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre>
+<p>这一步很关键, 然而, 由于国内网络原因, 下载是真的慢, 所以我替换使用了腾讯云提供的仓库</p>
+<pre><code class="language-shell">sed -i 's+download.docker.com+mirrors.cloud.tencent.com/docker-ce+' /etc/yum.repos.d/docker-ce.repo
+</code></pre>
+<p>安装 <code>Docker</code></p>
+<pre><code class="language-shell">yum install docker-ce docker-ce-cli containerd.io
+</code></pre>
+<h3 id="到这里-docker-就已经安装好了-启动运行看一下">到这里 <code>Docker</code> 就已经安装好了, 启动运行看一下</h3>
+<pre><code class="language-shell">systemctl start docker
+</code></pre>
+<h3 id="配置开机启动">配置开机启动</h3>
+<pre><code class="language-shell">systemctl enable docker
+</code></pre>
+<h3 id="同样的问题-docker-的默认仓库是搭建在国外服务器上的-手动配置一下国内仓库">同样的问题, <code>Docker</code> 的默认仓库是搭建在国外服务器上的, 手动配置一下国内仓库</h3>
+<pre><code class="language-shell">vim /etc/docker/daemon.json
+</code></pre>
+<p>注意配置文件的格式</p>
+<pre><code class="language-json">{
+	&quot;registry-mirrors&quot;: [
+		&quot;https://9903913c011242788ce2103eaaa4534d.mirror.swr.myhuaweicloud.com&quot;,
+		&quot;https://dockerhub.azk8s.cn&quot;,
+		&quot;https://docker.mirrors.ustc.edu.cn&quot;,
+		&quot;http://hub-mirror.c.163.com&quot;,
+		&quot;https://registry.docker-cn.com&quot;
+	]
+}
+</code></pre>
+<h2 id="结语">结语</h2>
+<p>整个配置过程难度不大, 主要还是国内网络的问题, 需要替换软件源和仓库等等 ~~</p>
+<p><strong>现在, 可以准备把项目扔到服务器上运行了 o(<em>￣▽￣</em>)ブ</strong></p>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/docker/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#docker</a>
+    
+    <a href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#腾讯云</a>
+    
+    <a href="/tags/%E5%B7%A5%E5%85%B7/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#工具</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一页</span>
+        <a href="/posts/go-core/map/" class="block">Go Map 底层分析</a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+    </div>
+</div>
 
+        
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+<div class="bg-secondary-bg rounded p-6">
+    <h3 class="text-lg font-semibold mb-4">系列文章</h3>
+    <div class="content">
+        
+        
+        <a href="/posts/tools/faststone-capture/">FastStone Capture Key</a>
+        <br />
+        
+        <a href="/posts/tools/vscode-go/">VSCode 配置 Golang 环境</a>
+        <br />
+        
+        <a href="/posts/tools/sublime-text-key/">Sublime Text3 Key</a>
+        <br />
+        
+        <a href="/posts/tools/linux-docker-config/">腾讯云服务器 Docker 安装记录</a>
+        <br />
+        
+        
+    </div>
+</div>
+        
+        
+    </div>
+    
 
+    
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
 
             </div>
         </div>

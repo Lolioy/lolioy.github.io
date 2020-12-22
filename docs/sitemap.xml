@@ -4,7 +4,37 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tools/faststone-capture/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -13,27 +43,12 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/posts/tools/vscode-go/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/vscode-go/</loc>
-    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/sublime-text-key/</loc>
+    <loc>/posts/tools/sublime-text-key/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,11 +73,6 @@
   </url>
   
   <url>
-    <loc>/series/</loc>
-    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/go-core/map/</loc>
     <lastmod>2020-01-20T00:00:00+00:00</lastmod>
   </url>
@@ -78,7 +88,7 @@
   </url>
   
   <url>
-    <loc>/posts/linux-docker-config/</loc>
+    <loc>/posts/tools/linux-docker-config/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url>
   

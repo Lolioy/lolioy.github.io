@@ -7,22 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2020 &lt;a href=&#34;https://beian.miit.gov.cn/&#34;&gt;粤ICP备18160923号-2&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FastStone Capture Key</title>
+      <link>/posts/tools/faststone-capture/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tools/faststone-capture/</guid>
+      <description>FastStone Capture 注册码分享 Name: bluman Number: VPISCJULXUFGDDXYAUYF</description>
+    </item>
+    
     <item>
       <title>VSCode 配置 Golang 环境</title>
-      <link>/posts/vscode-go/</link>
+      <link>/posts/tools/vscode-go/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/vscode-go/</guid>
+      <guid>/posts/tools/vscode-go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sublime Text3 Key</title>
-      <link>/posts/sublime-text-key/</link>
+      <link>/posts/tools/sublime-text-key/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/sublime-text-key/</guid>
+      <guid>/posts/tools/sublime-text-key/</guid>
       <description></description>
     </item>
     
@@ -55,10 +64,10 @@
     
     <item>
       <title>腾讯云服务器 Docker 安装记录</title>
-      <link>/posts/linux-docker-config/</link>
+      <link>/posts/tools/linux-docker-config/</link>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/linux-docker-config/</guid>
+      <guid>/posts/tools/linux-docker-config/</guid>
       <description></description>
     </item>
     

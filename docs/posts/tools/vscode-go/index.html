@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='zh' ><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>学习资料|Lolioy 杂货铺</title>
+<title>VSCode 配置 Golang 环境|Lolioy 杂货铺</title>
 <link rel="stylesheet" href="/css/eureka.min.css">
 <script defer src="/js/eureka.min.js"></script>
 
@@ -37,7 +37,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hue573946b69748ec824f15d9957df5ace_22589_180x180_fill_q75_box_center.jpg">
 
 <meta name="description"
-  content="学习资料收集">
+  content="VSCode Go 插件配置">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,8 +49,8 @@
       "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"学习资料",
-      "item":"/posts/study-collection/"}]
+      "name":"VSCode 配置 Golang 环境",
+      "item":"/posts/tools/vscode-go/"}]
 }
 </script><script type="application/ld+json">
 {
@@ -58,13 +58,13 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/posts/study-collection/"
+        "@id": "/posts/tools/vscode-go/"
     },
-    "headline": "学习资料 | Lolioy 杂货铺",
-    "image": "/images/posts/study-bg.png",
-    "datePublished": "2020-03-05T00:00:00+00:00",
-    "dateModified": "2020-03-05T00:00:00+00:00",
-    "wordCount":  66 ,
+    "headline": "VSCode 配置 Golang 环境 | Lolioy 杂货铺",
+    "image": "/images/posts/win10-bg.png",
+    "datePublished": "2020-06-11T00:00:00+00:00",
+    "dateModified": "2020-06-11T00:00:00+00:00",
+    "wordCount":  474 ,
     "publisher": {
         "@type": "Person",
         "name": "Lolioy",
@@ -73,20 +73,20 @@
             "url": "/images/icon.jpg"
         }
         },
-    "description": "学习资料收集"
+    "description": "VSCode Go 插件配置"
 }
-</script><meta property="og:title" content="学习资料 | Lolioy 杂货铺" />
+</script><meta property="og:title" content="VSCode 配置 Golang 环境 | Lolioy 杂货铺" />
 <meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="/images/icon.jpg">
 
 
-<meta property="og:url" content="/posts/study-collection/" />
+<meta property="og:url" content="/posts/tools/vscode-go/" />
 
 
 
-<meta property="og:description" content="学习资料收集" />
+<meta property="og:description" content="VSCode Go 插件配置" />
 
 
 
@@ -102,17 +102,39 @@
 
 
 
-<meta property="article:published_time" content="2020-03-05T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2020-06-11T00:00:00&#43;00:00" />
 
 
-<meta property="article:modified_time" content="2020-03-05T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-06-11T00:00:00&#43;00:00" />
 
 
 
 <meta property="article:section" content="posts" />
 
 
-<meta property="article:tag" content="study" />
+<meta property="article:tag" content="go" />
+
+<meta property="article:tag" content="工具" />
+
+
+
+
+
+
+
+
+
+<meta property="og:see_also" content="/posts/tools/faststone-capture/" />
+
+
+
+
+
+<meta property="og:see_also" content="/posts/tools/sublime-text-key/" />
+
+
+
+<meta property="og:see_also" content="/posts/tools/linux-docker-config/" />
 
 
 
@@ -138,7 +160,7 @@
     <div id="target"
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
-            currenturl="/posts/study-collection/">
+            currenturl="/posts/tools/vscode-go/">
             
             <a href="/posts/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
@@ -233,12 +255,12 @@
 
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
-        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">学习资料</h1>
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">VSCode 配置 Golang 环境</h1>
         <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>2020-03-05</span>
+        <span>2020-06-11</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -248,49 +270,92 @@
     
 
     
+    <div class="mr-6 my-2">
+        <i class="fas fa-th-list mr-1"></i>
+        
+        <a href="/series/%E5%B7%A5%E5%85%B7/" class="hover:text-eureka">工具</a>
+        
+    </div>
+    
 </div>
         
         
         <div class="my-4">
-            <img src="/images/posts/study-bg.png" class="w-full" alt="Featured Image">
+            <img src="/images/posts/win10-bg.png" class="w-full" alt="Featured Image">
         </div>
         
         <div class="content">
-            <h2 id="mysql">MySQL</h2>
-<ul>
+            <p><code>VSCode</code> 和 <code>Golang</code> 安装就不说了，网上教程一大把。</p>
+<h2 id="goproxy-配置">GoProxy 配置</h2>
+<blockquote>
+<p>由于国内网络环境限制，建议先配置 <code>GoProxy</code> 环境变量，当然不配置也行，你能正常访问 <a href="https://golang.org/">https://golang.org/</a> 的话问题不大。</p>
+<p>推荐使用 <code>go mod</code> 管理项目</p>
+</blockquote>
+<p>在安装好 <code>Go</code> 运行环境后，<code>Windows</code> 系统可以打开 <code>cmd</code> 或者 <code>powershell</code> (<code>macOS</code>和<code>Linux</code>系统打开终端)，分别输入以下命令</p>
+<pre><code class="language-shell"># 启用 go mod
+go env -w GO111MODULE=on
+# 设置 Go Proxy 代理
+go env -w GOPROXY=https://goproxy.io,direct
+</code></pre>
+<h2 id="vscode-安装-go-插件">VScode 安装 Go 插件</h2>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/151950a22fc34c859a69b71f529ab4f5~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<h2 id="vscode-安装-go-工具包">VSCode 安装 Go 工具包</h2>
+<p>Go 工具包包含了一些格式化、代码检查等功能</p>
+<ol>
+<li><code>Ctrl</code> + <code>Shift</code> + <code>P</code> (<code>Windows</code>环境)，或者选择 &ldquo;查看&rdquo; -&gt; &ldquo;命令面板&rdquo;</li>
+</ol>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9f30d5d31f94468c8632dbd4807440ab~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<ol start="2">
 <li>
-<p><a href="https://mp.weixin.qq.com/s/DSgbe4plwYe1LjTgvvSeeg"><code>MySQL</code> 三万字精华总结</a></p>
+<p>输入 <code>go isntall</code></p>
 </li>
 <li>
-<p><a href="https://juejin.im/post/5e3eb616f265da570d734dcb#heading-21"><code>MySQL</code> 优化之精髓</a></p>
+<p>选择 <code>Go: Install/Update Tools</code> 项</p>
 </li>
-<li>
-<p><a href="https://zhuanlan.zhihu.com/p/29150809"><code>MySQL</code> 锁总结</a></p>
-</li>
-<li>
-<p><a href="https://mp.weixin.qq.com/s/dGECnPailOkMX476KoTQfg">互联网公司常用 <code>MySQL</code> 分库分表方案</a></p>
-</li>
-<li>
-<p><a href="https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&amp;mid=2247485148&amp;idx=1&amp;sn=a31f7ddef8f71104ee616b57996a0e44&amp;chksm=9b859621acf21f37270469a8d5a5ae4515def82afcc2f2a27f283a34ddbd50c34b9f3ce8c2cf&amp;token=1294896345&amp;lang=zh_CN#rd"><code>Explain</code> 执行计划</a></p>
-</li>
-<li>
-<p><a href="https://mp.weixin.qq.com/s/e0CqJG2-PCDgKLjQfh02tw"><code>MySQL</code> 调优套路</a></p>
-</li>
-<li>
-<p><a href="https://juejin.im/post/6869532756498448392"><code>MySQL</code> 索引凭什么能让查询效率提高这么多</a></p>
-</li>
-<li>
-<p><a href="https://juejin.im/post/6871018035630342151"><code>MySQL</code> 锁</a></p>
-</li>
-<li>
-<p><a href="https://juejin.im/post/6868270408534720525"><code>MySQL</code> 面试题</a></p>
-</li>
-</ul>
+</ol>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bf98a7cd5c82437eafa9a347a298b6ea~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<ol start="4">
+<li>选择全部安装</li>
+</ol>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6af3ae194404934a89376f181402a03~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<ol start="5">
+<li>这时候会弹出 &ldquo;输出&rdquo; 框，等待安装完成即可</li>
+</ol>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/14e40c6c18b24aaa80060add1c0bcbe4~tplv-k3u1fbpfcp-zoom-1.image" alt="">
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d517407fc96a437985ef307ab48f0bc7~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<h2 id="vscode-go-插件配置">Vscode Go 插件配置</h2>
+<ol>
+<li>打开<code>VSCode</code>设置面板</li>
+</ol>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d9fbe9b2b4214e0f9fbd5a24b57a4903~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<ol start="2">
+<li>定位到<code>Go</code>插件项</li>
+</ol>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f25b41352c784d608b3e623fa7ad18d5~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<ol start="3">
+<li>修改格式化<code>Go</code>代码工具，我习惯使用的是<code>goimports</code>，大家可以根据自己的喜好进行选择</li>
+</ol>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/561900e5594449049de219f6451b5fc8~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<ol start="4">
+<li>启用代码提示（个人习惯，可以不启用）</li>
+</ol>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8484f2e9cae94406abde0446a7f50035~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<ol start="5">
+<li>启用<code>Go Server</code>，启用后可以开启代码跳转、格式化、自动完成、代码诊断等功能</li>
+</ol>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3bce571c29d741c0bc9b05431458159a~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<blockquote>
+<p>还可以设置其他配置项，感兴趣的同学可以到官方文档自行了解 <a href="https://github.com/golang/vscode-go/blob/master/docs/settings.md">https://github.com/golang/vscode-go/blob/master/docs/settings.md</a></p>
+</blockquote>
+<h2 id="结语">结语</h2>
+<p>到这里<code>VSCode</code>基本上可以满足我们日常开发<code>Go</code>的需求了</p>
         </div>
         
         <div class="my-4">
     
-    <a href="/tags/study/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#study</a>
+    <a href="/tags/go/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#go</a>
+    
+    <a href="/tags/%E5%B7%A5%E5%85%B7/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#工具</a>
     
 </div>
         
@@ -304,13 +369,13 @@
     <div>
         
         <span class="block font-bold">上一页</span>
-        <a href="/posts/tools/sublime-text-key/" class="block">Sublime Text3 Key</a>
+        <a href="/posts/tools/faststone-capture/" class="block">FastStone Capture Key</a>
         
     </div>
     <div class="md:text-right mt-4 md:mt-0">
         
         <span class="block font-bold">下一页</span>
-        <a href="/posts/go-core/chan/" class="block">Go Chan 底层分析</a>
+        <a href="/posts/tools/sublime-text-key/" class="block">Sublime Text3 Key</a>
         
     </div>
 </div>
@@ -318,8 +383,55 @@
         
     </div>
     
+    <div class="col-span-2">
+        
+        
+<div class="bg-secondary-bg rounded p-6">
+    <h3 class="text-lg font-semibold mb-4">系列文章</h3>
+    <div class="content">
+        
+        
+        <a href="/posts/tools/faststone-capture/">FastStone Capture Key</a>
+        <br />
+        
+        <a href="/posts/tools/vscode-go/">VSCode 配置 Golang 环境</a>
+        <br />
+        
+        <a href="/posts/tools/sublime-text-key/">Sublime Text3 Key</a>
+        <br />
+        
+        <a href="/posts/tools/linux-docker-config/">腾讯云服务器 Docker 安装记录</a>
+        <br />
+        
+        
+    </div>
+</div>
+        
+        
+    </div>
+    
 
     
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">相关</h2>
+        <div class="content">
+            
+            <a href="/posts/tools/sublime-text-key/">Sublime Text3 Key</a>
+            <br />
+            
+            <a href="/posts/go-core/chan/">Go Chan 底层分析</a>
+            <br />
+            
+            <a href="/posts/go-core/map/">Go Map 底层分析</a>
+            <br />
+            
+            <a href="/posts/tools/linux-docker-config/">腾讯云服务器 Docker 安装记录</a>
+            <br />
+            
+        </div>
+    </div>
     
 </div>
 <script>

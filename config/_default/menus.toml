@@ -1,5 +1,5 @@
 [[main]]
-name = "博客"
+name = "文章"
 url = "/posts/"
 weight = 1
 

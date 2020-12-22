@@ -6,6 +6,7 @@ description = "Sublime Text3 Key Share"
 tags = [
     "工具",
 ]
+series = ["工具"]
 featuredImage = "images/posts/st3-bg.png"
 +++
 

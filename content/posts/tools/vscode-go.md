@@ -7,6 +7,7 @@ tags = [
     "go",
     "工具",
 ]
+series = ["工具"]
 featuredImage = "images/posts/win10-bg.png"
 +++
 
